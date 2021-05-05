@@ -1,0 +1,48 @@
+.List {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .ListItem {
+    position: relative;
+    width: 19%;
+    cursor: pointer;
+    .img_wrapper {
+      .decorate {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 35px;
+        border-radius: 3px;
+        background: linear-gradient(hsla(0,0%,43%,.4),hsla(0,0%,100%,0));
+      }
+      .play_count {
+        z-index: 1;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        line-height: 15px;
+        color: #f1f1f1;
+        font-size: 12px;
+        .play{
+          vertical-align: top;
+        }
+      }
+      img {
+        border-radius: 3px;
+      }
+    }
+    .desc {
+      overflow: hidden;
+      margin-top: 2px;
+      padding: 0 2px;
+      height: 50px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #2E3030;
+    }
+  }
+}

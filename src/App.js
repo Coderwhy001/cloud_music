@@ -6,7 +6,6 @@ import routes from './routes/index.js';
 import { HashRouter } from 'react-router-dom';
 
 function App () {
-  console.log(routes)
   return (
     <HashRouter>
       {/* <GlobalStyle></GlobalStyle>
