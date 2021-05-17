@@ -1,0 +1,31 @@
+.singers {
+  &__content {
+    display: flex;
+    justify-content: center;
+    .item__wrapper {
+      width: 1300px;
+      .top {
+        margin-bottom: 4px;
+      }
+      .bottom {
+        &__list {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .ListItem {
+            width: 15%;
+            margin-bottom: 16px;
+            .img_wrapper {
+              border-radius: 3px;
+              border: 1px solid #F3F3F3;
+              margin-bottom: 8px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

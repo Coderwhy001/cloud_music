@@ -1,26 +1,28 @@
 .Recommend {
-  display: flex;
-  justify-content: center;
   &__content {
-    width: 1300px;
-    .swiper-container {
-      height: 200px;
-      .swiper-button-prev{
-        color: white;
-      }
-      .swiper-button-next {
-        color: white;
-      }
-      .swiper-pagination {
-        .swiper-pagination-bullet-active {
-          background: #EC4141;
+    display: flex;
+    justify-content: center;
+    .item_wrapper {
+      width: 1300px;
+      .swiper-container {
+        height: 200px;
+        .swiper-button-prev{
+          color: white;
+        }
+        .swiper-button-next {
+          color: white;
+        }
+        .swiper-pagination {
+          .swiper-pagination-bullet-active {
+            background: #EC4141;
+          }
         }
       }
-    }
-    &__song {
-      padding: 10px 0 0 0;
-      .title {
-        font-size: 20px;
+      .Recommend__content__song {
+        padding: 10px 0 0 0;
+        .title {
+          font-size: 20px;
+        }
       }
     }
   }

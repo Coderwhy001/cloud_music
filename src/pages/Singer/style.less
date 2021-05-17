@@ -1,0 +1,39 @@
+.singer {
+  .singer__detail {
+    padding: 32px;
+    display: flex;
+    .img_wrapper{
+      width: 184px;
+      height: 184px;
+      position: relative;
+      img{
+        width: 184px;
+        height: 184px;
+        border-radius:3px;
+      }
+    }
+    .singer__desc {
+      padding-left: 20px;
+      .title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .collect {
+        margin-top: 6px;
+        margin-bottom: 12px;
+        --antd-wave-shadow-color: #fff;
+        .ant-btn {
+          height: 32px;
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

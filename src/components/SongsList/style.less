@@ -1,0 +1,55 @@
+.songList {
+  .menu {
+    display: flex;
+    padding: 16px 0 16px 32px;
+    div {
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .selected {
+      font-weight: 700;
+      border-bottom: 3px solid #ec4141;
+    }
+  }
+  .ant-table-wrapper {
+    padding-bottom: 30px;
+    .ant-table-tbody > tr > td {
+      border-bottom: #fff;
+    }
+    .ant-table-thead {
+      .ant-table-cell:hover {
+        background: #F0F1F2;
+      }
+      .ant-table-cell {
+        color: #676767;
+      }
+    }
+    .ant-table-tbody {
+      .ant-table-row:hover {
+        background: #F0F1F2 !important;
+      }
+      .ant-table-row {
+        cursor: pointer;
+      }
+    }
+    .ant-table-cell {
+      padding: 0;
+      height: 36px;
+    }
+    .dark {
+      background: #F9F9F9;
+      height: 36px;
+      line-height: 36px;
+    }
+    .ant-table-thead {
+      .ant-table-cell {
+        background: #fff;
+      }
+    }
+  }
+  .singerDetail {
+    padding: 0px 32px;
+    white-space: pre-line;
+    color: rgb(103, 103, 103);
+  }
+}

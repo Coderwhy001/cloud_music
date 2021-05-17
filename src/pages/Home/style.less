@@ -10,7 +10,7 @@
     &__title {
       font-size: 18px;
     }
-    .ant-input-group-wrapper {
+    .input-group-wrapper {
       margin-left: 160px;
       display: flex;
       align-items: center;
@@ -21,13 +21,16 @@
       caret-color: #FFF;
       background: #E13E3E;
       color: #FFF;
-      .ant-input-group-addon {
+      .visible {
+        z-index: 1050;
+      }
+      .input-group-addon {
         margin-left: 12px;
         span {
           font-size: 12px;
         }
       }
-      .ant-input {
+      .input {
         border-radius: 32px;
         border: 1px solid transparent;
         outline: none; 
@@ -36,13 +39,14 @@
         color: #FFF;
         width: 130px;
       }
-      .ant-input::-webkit-input-placeholder {
+      
+      .input::-webkit-input-placeholder {
         color: #E76464;
       }
     }
   }
   &__bottom {
-    margin: 18px 0 30px 0;
+    margin: 18px 0 20px 0;
     a{
       color: #000;
       text-decoration:none;
@@ -62,4 +66,58 @@
 }
 body {
   margin: 0;
+}
+.ant-dropdown {
+  left: 255px !important;
+  .searchResult {
+    background: #fff;
+    width: 358px;
+    height: 450px;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    box-shadow: #F8F8F8;
+    .hotSongs {
+      display: inline-block;
+      padding: 2px 10px;
+      margin: 0 20px 10px 0;
+      border-radius: 6px;
+      border: 1px solid #D8D8D8;
+      font-size: 14px;
+      color: #2E3030;
+      cursor: pointer;
+    }
+    .title {
+      height: 28px;
+      background: #F5F5F7;
+      padding-left: 10px;
+      line-height: 28px;
+    }
+    .item {
+      height: 30px;
+      padding-left: 32px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      line-height: 30px;
+    }
+    .item:hover {
+      background: #F2F2F2;
+    }
+  }
+}
+.ant-modal-content {
+  width: 352px;
+  height: 430px;
+  .ant-modal-body {
+    display: flex;
+    justify-content: center;
+    .return {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
 }

@@ -1,0 +1,126 @@
+.album {
+  .album__detail {
+    padding: 32px;
+    display: flex;
+    .img_wrapper{
+      width: 184px;
+      height: 184px;
+      position: relative;         
+      .decorate {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 35px;
+        border-radius: 3px;
+        background: linear-gradient(hsla(0,0%,43%,.4),hsla(0,0%,100%,0));
+      }
+      .play_count {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        font-size: 12px;
+        line-height: 15px;
+        color: #f1f1f1;
+        .play{
+          vertical-align: top;
+        }
+      }
+      img{
+        width: 184px;
+        height: 184px;
+        border-radius:3px;
+      }
+    }
+    .album__desc {
+      padding-left:20px;
+      height: 184px;
+      &__title {
+        display: flex;
+        align-items: center;
+        padding-bottom: 6px;
+        &__label {
+          width: 34px;
+          height: 20px;
+          border: 1px solid #F28C8C;
+          color:#ec4141;
+          border-radius: 3px;
+          font-size: 14px;
+          text-align: center;
+        }
+        &__name {
+          font-size: 22px;
+          font-weight: 600;
+          margin-left: 10px;
+        }
+      }
+      &__creator {
+        display: flex;
+        align-items: center;
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+        &__name {
+          font-size: 12px;
+          margin: 0 10px;
+        }
+        &__time {
+          font-size: 12px;
+          color: #676767;
+        }
+      }
+      &__button {
+        padding: 12px 0;
+        display: flex;
+        align-items: center;
+
+        --antd-wave-shadow-color: #fff;
+        .play {
+          margin-right: 10px;
+          .ant-btn {
+            height: 32px;
+            display: flex;
+            background: #ec4141;
+            align-items: center;
+            color: #fff;
+            span {
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+        .collect {
+          .ant-btn {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            span {
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+      &__text {
+        font-size: 13px;
+        color: #676767;
+      }
+      &__label {
+        font-size: 13px;
+        color: #676767;
+      }
+      &__song {
+        display: flex;
+        font-size: 13px;
+        color: #676767;
+        padding: 4px 0;
+        .num {
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}

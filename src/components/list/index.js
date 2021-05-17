@@ -12,8 +12,8 @@ function List (props) {
         {
           recommendList.map(item => {
             return (
-              <div className="ListItem" key={item.id} onClick={() => {enterDetail(item.id)}}>
-                <div className="img_wrapper">
+              <div className="ListItem" key={item.id}>
+                <div className="img_wrapper" onClick={() => {enterDetail(item.id)}}>
                   <div className="decorate"></div>
                   <img src={item.picUrl + "?param=300x300"} width="100%" height="100%" alt="music"/>
                   <div className="play_count">

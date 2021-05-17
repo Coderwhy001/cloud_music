@@ -27,31 +27,33 @@ function Recommend(props) {
       {
         isNotAlbumPage ? 
         <div className="Recommend__content">
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
-          autoplay
-        >
-          {
-            bannerList.map((item, index) => {
-              return (
-                <SwiperSlide key={item.imageUrl}>
-                  <img src={item.imageUrl} width="100%" height="100%" alt="推荐" />
-                </SwiperSlide>
-              )
-            })
-          }
-        ...
-      </Swiper>
-      <div className="Recommend__content__song">
-        <h1 className="title">推荐歌单</h1>
-        <RecommendList recommendList={recommendList} />
-      </div>
-      </div>
+          <div className="item_wrapper">
+            <Swiper
+            spaceBetween={20}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            autoplay
+          >
+              {
+                bannerList.map((item, index) => {
+                  return (
+                    <SwiperSlide key={item.imageUrl}>
+                      <img src={item.imageUrl} width="100%" height="100%" alt="推荐" />
+                    </SwiperSlide>
+                  )
+                })
+              }
+              ...
+            </Swiper>
+            <div className="Recommend__content__song">
+              <h1 className="title">推荐歌单</h1>
+              <RecommendList recommendList={recommendList} />
+            </div>
+          </div>
+        </div>
       : null
       }
       { renderRoutes(props.route.routes) }

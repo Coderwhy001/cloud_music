@@ -4,7 +4,9 @@ import Home from '../pages/Home';
 import Recommend from '../pages/Recommend';
 import Singers from '../pages/Singers';
 import Rank from '../pages/Rank';
-import Album from '../pages/Album'
+import Album from '../pages/Album';
+import Singer from '../pages/Singer'
+import User from '../pages/User'
 export default [
   {
     path: "/",
@@ -29,11 +31,33 @@ export default [
       },
       {
         path: "/singers",
-        component: Singers
+        component: Singers,
+        routes: [
+          {
+            path: "/singers/:id",
+            component: Singer
+          }
+        ]
       },
       {
         path: "/rank",
-        component: Rank
+        component: Rank,
+        routes: [
+          {
+            path: "/rank/:id",
+            component: Album
+          }
+        ]
+      },
+      {
+        path: "/album/:id",
+        exact: true,
+        key: "album",
+        component: Album
+      },
+      {
+        path: '/user/:id',
+        component: User
       }
     ]
   }
